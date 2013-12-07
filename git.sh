@@ -1,7 +1,7 @@
 #!/bin/bash
 menu() {
 	
-	echo "1)Stworz nowe repo\n2)Aktualizuj swoje repo\n3)Sciagnij repo\n4)wyswietl co jest w folderze\n5)Wyczysc ekran\n\n6)Autor0)Koniec"
+	echo "1)Stworz nowe repo\n2)Aktualizuj swoje repo\n3)Sciagnij repo\n4)wyswietl co jest w folderze\n5)Wyczysc ekran\n6)Autor\n0)Koniec"
 	echo "\nWybieram: \c"
 }
 
@@ -40,7 +40,11 @@ aktualizuj(){
         git push
 	echo "zaktualizowalem"
 }
-
+wyswietl(){
+	clear
+	ls -la
+	echo"\n\n"
+}
 kopiuj(){
 	echo "Podaj link: \c"
 	read link
@@ -64,13 +68,13 @@ while [ $wybor -gt 0 ]; do
 		kopiuj
 		;;
 	"4")
-		ls -la
+		wyswietl
 		;;
 	"5")
 		clear
 		;;
 	"6")
-		echo "YourMotherXD"
+		echo "\n\n Autorem tego fantastycznego skryptu jest: YourMotherXD \n\n"
 		;;
 	esac
 done
