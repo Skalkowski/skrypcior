@@ -25,7 +25,8 @@ nowe(){
         read nazwa
         git remote add origin https://github.com/Michaldwadwa/$nazwa.git
         git push origin master
-        echo "stworzylem"
+        clear
+        echo "stworzylem\n"
 }
 
 aktualizuj(){
@@ -38,7 +39,8 @@ aktualizuj(){
         read kom
         git commit -m "$kom"
         git push
-	echo "zaktualizowalem"
+        clear
+	echo "zaktualizowalem\n"
 }
 wyswietl(){
 	clear
@@ -49,7 +51,13 @@ kopiuj(){
 	echo "Podaj link: \c"
 	read link
 	clone $link
-	echo "Skopiowalem"
+	clear
+	echo "Skopiowalem \c"
+}
+
+autor(){
+	clear
+	echo "\n\n Autorem tego fantastycznego skryptu jest: YourMotherXD \n\n"
 }
 
 clear
