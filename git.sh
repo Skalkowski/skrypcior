@@ -45,7 +45,7 @@ aktualizuj(){
 wyswietl(){
 	clear
 	ls -la
-	echo"\n\n"
+	echo "\n\n"
 }
 kopiuj(){
 	echo "Podaj link: \c"
@@ -57,7 +57,7 @@ kopiuj(){
 
 autor(){
 	clear
-	echo "\n\n Autorem tego fantastycznego skryptu jest: YourMotherXD \n\n"
+	echo "\n\nAutorem tego fantastycznego skryptu jest: YourMotherXD \n\n"
 }
 
 clear
@@ -82,7 +82,7 @@ while [ $wybor -gt 0 ]; do
 		clear
 		;;
 	"6")
-		echo "\n\n Autorem tego fantastycznego skryptu jest: YourMotherXD \n\n"
+		autor
 		;;
 	esac
 done
