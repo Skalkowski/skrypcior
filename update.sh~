@@ -4,7 +4,7 @@
                 rm .gitignore
         fi
         git add *
-        echo "Podaj komentarz: "
+        echo "Podaj komentarz: \c"
         read kom
         git commit -m "$kom"
         git push
