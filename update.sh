@@ -9,4 +9,4 @@
         git commit -m "$kom"
         git push
         clear
-	echo "zaktualizowalem\n"
+	echo "zaktualizowalem"
